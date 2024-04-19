@@ -1,0 +1,4 @@
+<launch>
+	<rosparam file="$(find offboard_flight)/cfg/flight_base.yaml" ns="offboard_flight"/>
+	<node pkg="offboard_flight" type="takeoff_and_hover_node" name="takeoff_and_hover_node" output="screen" />
+</launch>
